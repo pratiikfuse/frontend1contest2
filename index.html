@@ -19,7 +19,9 @@
     <section class="book-section" id="book-section" >
         <!-- Book ID, Title, Author, Genre, and Availability. -->
         <table class="table-1" id="books">
-            <caption><h2>Books</h2></caption>
+            <caption><div class="book-title"><h2>Books</h2>
+                <img src="./book-img.svg"></div>
+            </caption>
             <tr>
                 <th>Book ID</th>
                 <th>Title</th>
@@ -103,8 +105,11 @@
     </section>
 
     <section class="registration" id="form">
-        <form  method="post">
-            <h2>Register</h2>
+        <form  >
+            <div class="child form-title">
+                <h2>Register</h2>
+                <img id="form-svg" src="./form-img.svg" alt="form svg">
+            </div>
             <div class="child">
                 <label for="firstname">First Name</label>
                 <input type="text" id="firstname" required>
