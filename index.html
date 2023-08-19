@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <h1>Library System</h1>
+        <ul>
+            <li><a class="menu" href="#book-section">Books</a></li>
+            <li><a class="menu" href="#form">Register</a></li>
+            <li><a class="menu" href="">Contact Us</a></li>
+            <li><a class="menu" href="">Logout</a></li>    
+        </ul>
+    </nav>
+    <section class="book-section" id="book-section" >
+        <!-- Book ID, Title, Author, Genre, and Availability. -->
+        <table class="table-1" id="books">
+            <caption><h2>Books</h2></caption>
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Availability</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/The_Alchemist_(novel)">Alchemist</a>
+                    <table class="table-2"> 
+                        <tr><td>Publication Date: 1988</td></tr>
+                        <tr><td>Page Count: 163</td></tr>
+                        <tr><td>ISBN: 0-06-250217-4</td></tr>
+                    </table>
+                </td>
+                <td>Paulo Coelho</td>
+                <td>Quest, adventure, fantasy</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/The_Kite_Runner">The Kite Runner</a>
+                    <table class="table-2">
+                        <tr><td>Publication Date: 2003</td></tr>
+                        <tr><td>Page Count: 371</td></tr>
+                        <tr><td>ISBN: 1-57322-245-3</td></tr>
+                    </table>
+                </td>
+                <td>Khaled Hosseini</td>
+                <td>Historical fiction
+                    Drama
+                    Classic</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/The_Monk_Who_Sold_His_Ferrari">The Monk Who Sold His Ferrari</a>
+                    <table class="table-2">
+                        <tr><td>Publication Date: 1999</td></tr>
+                        <tr><td>Page Count: 198</td></tr>
+                        <tr><td>ISBN: 978-0062515674</td></tr>
+                    </table>
+                </td>
+                <td>Robin Sharma</td>
+                <td>Self Help</td>
+                <td>Not Available</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Think_and_Grow_Rich">Think and Grow Rich</a>
+                    <table class="table-2">
+                        <tr><td>Publication Date: 1937</td></tr>
+                        <tr><td>Page Count: 238</td></tr>
+                        <tr><td>ISBN: 978-1-78844-102-5</td></tr>
+                    </table>
+                </td>
+                <td>Napolean Hill</td>
+                <td>Non-fiction</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Rich_Dad_Poor_Dad">Rich Dad Poor Dad</a>
+                    <table class="table-2">
+                        <tr><td>Publication Date: 2000</td></tr>
+                        <tr><td>Page Count: 336</td></tr>
+                        <tr><td>ISBN: 0-446-67745-0</td></tr>
+                    </table>
+                </td>
+                <td>Robert Kiyosaki</td>
+                <td>Personal Finance</td>
+                <td>Available</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="registration" id="form">
+        <form  method="post">
+            <h2>Register</h2>
+            <div class="child">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" required>
+            </div>
+            <div class="child">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="Lastname" required>
+            </div>
+            <div class="child">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div class="child">
+            <div class="child">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" required>
+            </div>
+            
+            <div class="child">
+                <label for="age">Age</label>
+                <input type="number" id="age" min="5" max="100" required>
+            </div>
+            <div class="child">
+                <label for="password">Password</label>
+                <input type="password"  id="password" required>
+            </div>
+            <div class="child">
+                <label for="password2">Confirm Password</label>
+                <input type="password" id="password2" required>
+            </div>
+            <div class="child"><button type="submit">Register</button></div>
+        </form>
+    </section>
+</body>
+</html>
